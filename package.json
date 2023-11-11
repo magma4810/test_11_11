@@ -9,6 +9,10 @@
     "test": "jest",
     "prepare": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magma4810/test_11_11.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -32,12 +36,5 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test",
-      "...": "..."
-    }
   }
 }
