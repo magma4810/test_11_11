@@ -4,11 +4,12 @@ module.exports = {
     es2021: true,
     "jest/globals": true,
   },
-  extends: ["eslint:recommended", "prettier"],
+  extends: ["eslint:recommended", "prettier", "eslint-config-prettier"],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  ignorePatterns: [".eslintrc.js", "babel.config.js", "jest.config.js"],
   plugins: ["jest"],
   rules: {},
   overrides: [
