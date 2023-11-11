@@ -15,7 +15,7 @@ jobs:
 
       - name: Lint check
         run: |
-          npx eslint .
+          npx run lint
 
       - name: Run tests
         run: |
